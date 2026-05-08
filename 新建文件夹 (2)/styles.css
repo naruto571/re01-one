@@ -1,0 +1,23 @@
+:root{
+  --bg:#0b1220;
+  --panel:#0f1720;
+  --accent:#ffcd57;
+  --text:#eaf2ff;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Microsoft Yahei",Arial;}
+body{background:linear-gradient(180deg,#06111a,var(--bg));color:var(--text);display:flex;align-items:center;justify-content:center;padding:20px;}
+.container{width:100%;max-width:980px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+header h1{margin:0;font-size:18px}
+.info{display:flex;gap:12px;align-items:center;font-size:14px}
+button{background:var(--accent);border:none;padding:8px 12px;border-radius:6px;color:#111;font-weight:700;cursor:pointer}
+main{background:var(--panel);padding:12px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+canvas{display:block;border-radius:6px;background:linear-gradient(180deg,#8ccbf0 0%, #5aa2d9 60%, #2b6ea6 100%);max-width:100%}
+.hud{display:flex;justify-content:space-between;margin-top:8px;color:#dcefff;font-weight:700}
+.state{color:#ffd; font-weight:800}
+footer{margin-top:10px;color:#9aa; font-size:13px}
+@media (max-width:700px){
+  .info{flex-direction:column;align-items:flex-start}
+  .hud{flex-direction:column;gap:6px}
+}

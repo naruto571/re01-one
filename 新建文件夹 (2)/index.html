@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>简易跑酷 - 孙雨豪 跟踪</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>跑酷示例：人物头上跟随“孙雨豪”</h1>
+      <div class="info">
+        <div>按 空格 / ↑ 跳跃，按 ↓ 滑行（落地可短暂滑行），移动设备点按屏幕跳跃</div>
+        <button id="restart">重新开始</button>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="game" width="900" height="420"></canvas>
+      <div class="hud">
+        <div>分数: <span id="score">0</span></div>
+        <div>最高分: <span id="best">0</span></div>
+        <div id="state" class="state"></div>
+      </div>
+    </main>
+
+    <footer>
+      <small>说明：这是示例代码，人物用简单图形绘制，文字用 Canvas 绘制并平滑跟随人物头部位置。</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
